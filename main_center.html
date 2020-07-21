@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="main.css">
     <title>자기개발서</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="header row">
-            <div class="mx-auto">자기개발서(헤더 작성해주세요)</div>
+    <div class="container-fluid mx-2">
+        <div class="header p-5 row border-bottom">
+            <div class="mx-auto"><h2>자기개발서(헤더 작성해주세요)</h2></div>
         </div>
         <div class="center row">
             <ul class="list-group col-sm-4" id="accordion">
                 
-                <li><a href=#조원 class="list-group-item list-group-item-action" data-toggle="collapse" >조원</a>
-                    <ul id="조원" class="collapse" data-parent="#arccordion">
-                        <li><a href="#" class="list-group-item list-group-item-action">규짱</a></li>
-                        <li><a href="#" class="list-group-item list-group-item-action">재재</a></li>
-                    </ul>
+                <!-- 메뉴 속 메뉴 -->
+                <li><a  class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#co1">조원</a>
+                    <div id="co1" class="collapse" data-parent="#accordion">
+                        <a href="#" class="list-group-item list-group-item-action">규짱</a>
+                        <a href="#" class="list-group-item list-group-item-action">재재</a>
+                        <a href="#" class="list-group-item list-group-item-action">당근</a>
+                        <a href="#" class="list-group-item list-group-item-action">고다</a>
+                        <a href="#" class="list-group-item list-group-item-action">페이커</a>
+                    </div>
                 </li>
                 
                 <li><a href="#" class="list-group-item list-group-item-action">목차2</a></li>
@@ -34,24 +40,30 @@
                 <li><a href="#" class="list-group-item list-group-item-action">목차9</a></li>
                 <li><a href="#" class="list-group-item list-group-item-action">목차10</a></li>
             </ul>
-            <div class="contents col-sm-8">
+            <div class="contents col-sm-8 mt-3">
                 <div class="row">
                  
-                    <form class="form-inline ml-auto" action="/action_page.php">
+                    <form class="form-inline ml-auto" >
                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
                         <button class="btn btn btn-primary" type="submit">Search</button>
                     </form>
                 </div>
 
-                <div class="row h-30">
-                    <div class="content_title mx-auto">제목스</div>
-                </div>                      
-                <div class="row">
+                <div class="p-3 my-3 row">
+                    <div class="content_title mx-auto">
+                        <h1>제목스</h1>
+                    </div>
+                </div>   
+
+                <div class="p-3 mb-3 row">
                     <div class="content_detail mx-auto">
-                        내용스<br>
-                        블라블라<br>
-                        할말없음<br>
-                        끝!
+                        내용스 블라블라<br>
+                        조원 메뉴를 클릭해보세요!<br>
+                        부트스트랩 생각보다 기능이 많아여<br>
+                        collapse 신기해 다들 공부하라구<br>
+                        그냥 css로만 하는 것 보다 기본 디자인이 간지난다구<br>
+                        목차별, 제목별 스크롤 따로 둘까 말까 고민중인데 다들 어뗘<br>
+                        신난다 오늘은 여기서 끝~
                     </div>
                 </div>                
                 <div class="button_cont row m-2">
@@ -62,7 +74,7 @@
             </div>
 
         </div>
-        <div class="footer row bg-grey border">
+        <div class="p-3 footer row bg-light border">
             <div class="mx-auto">
                 made by UOS 자기개발서
             </div>
@@ -70,6 +82,6 @@
 
 
     </div> 
-    
+
 </body>
 </html>
